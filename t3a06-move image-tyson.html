@@ -1,8 +1,47 @@
 <h2 align=center> move image by Tyson </h2>
 
-<img src="thing.png" width="100px" id="thing"
+<img src="owl bear.jfif" width="100px" id="thing"
 style="position:relative; left:0px; top:0px; height:100px; width:100px">
-<input type=button value="go right" onclick="{ 
+
+<table border=3>
+<tr><td><input type=button value=" up left " onclick="{
+ document.getElementById('thing').style.top=
+ parseInt(document.getElementById('thing').style.top) - 10 + 'px'
+ document.getElementById('thing').style.left=
+ parseInt(document.getElementById('thing').style.left) - 10 + 'px'
+}"> </td>
+<td><input type=button value="   up  " onclick="{
+ document.getElementById('thing').style.top=
+ parseInt(document.getElementById('thing').style.top) - 10 + 'px'
+}"></td>
+<td><input type=button value=" up right " onclick="{
+ document.getElementById('thing').style.top=
+ parseInt(document.getElementById('thing').style.top) - 10 + 'px'
  document.getElementById('thing').style.left=
  parseInt(document.getElementById('thing').style.left) + 10 + 'px'
-}">
+}"> </tr></td>
+<tr><td><input type=button value="     left    " onclick="{
+ document.getElementById('thing').style.left=
+ parseInt(document.getElementById('thing').style.left) - 10 + 'px'
+}"></td>
+<td></td><td><input type=button value="     right     " onclick="{ 
+ document.getElementById('thing').style.left=
+ parseInt(document.getElementById('thing').style.left) + 10 + 'px'
+}"></tr></td>
+<tr><td><input type=button value=" down left " onclick="{
+ document.getElementById('thing').style.top=
+ parseInt(document.getElementById('thing').style.top) + 10 + 'px'
+ document.getElementById('thing').style.left=
+ parseInt(document.getElementById('thing').style.left) - 10 + 'px'
+}"> </td>
+<td><input type=button value="down" onclick="{
+ document.getElementById('thing').style.top=
+ parseInt(document.getElementById('thing').style.top) + 10 + 'px'
+}"></td>
+<td><input type=button value=" down right " onclick="{
+ document.getElementById('thing').style.top=
+ parseInt(document.getElementById('thing').style.top) + 10 + 'px'
+ document.getElementById('thing').style.left=
+ parseInt(document.getElementById('thing').style.left) + 10 + 'px'
+}"> </tr></td>
+</table>
