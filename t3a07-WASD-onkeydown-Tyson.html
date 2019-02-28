@@ -1,0 +1,58 @@
+ <html>
+<head>
+</head>
+<body background=" matrix.gif"> 
+<body onkeydown="{
+
+   if (event.key == 'd') {
+      document.getElementById('thing').style.left =
+      parseInt(document.getElementById('thing').style.left) + 10 + 'px'
+   } 
+
+if (event.key == 's') {
+      document.getElementById('thing').style.top =
+      parseInt(document.getElementById('thing').style.top) + 10 + 'px'
+   } 
+
+if (event.key == 'a') {
+      document.getElementById('thing').style.left =
+      parseInt(document.getElementById('thing').style.left) - 10 + 'px'
+   } 
+
+if (event.key == 'w') {
+      document.getElementById('thing').style.top =
+      parseInt(document.getElementById('thing').style.top) - 10 + 'px'
+   } 
+
+if (event.key == 'ArrowRight') {
+      document.getElementById('thing2').style.left =
+      parseInt(document.getElementById('thing2').style.left) + 10 + 'px'
+   } 
+
+if (event.key == 'ArrowDown') {
+      document.getElementById('thing2').style.top =
+      parseInt(document.getElementById('thing2').style.top) + 10 + 'px'
+   } 
+
+if (event.key == 'ArrowLeft') {
+      document.getElementById('thing2').style.left =
+      parseInt(document.getElementById('thing2').style.left) - 10 + 'px'
+   } 
+
+
+if (event.key == 'ArrowUp') {
+      document.getElementById('thing2').style.top =
+      parseInt(document.getElementById('thing2').style.top) - 10 + 'px'
+   } 
+}">
+ 
+<h2 align=center> <font color=red> WASD onkeydown by Tyson </font> </h2>
+<img src="walking.gif" width="500px" id="thing"
+style="position:relative; left:0px; top:0px; height:125px; width:125px;">
+<img src="walking.gif" width="500px" id="thing2"
+style="position:relative; left:0px; top:0px; height:125px; width:125px;">
+
+
+
+
+</body>
