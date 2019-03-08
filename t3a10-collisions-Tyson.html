@@ -1,7 +1,7 @@
 <head>
 <link rel="shortcut icon" href="danny.ico" type="image/x-icon"> 
 </head>
-<body bgcolor="yellow"   onMouseMove="{
+<body background="danny.jfif"   onMouseMove="{
    document.all.myLocation.value = 'left: '+event.x+', top: '+ event.y
 
 
@@ -21,33 +21,18 @@ style="position:absolute; z-index:-1; left:0px; top:0px; height:50px; width:50px
 <img src="danny.jfif"  id="myImage02" 
 style="position:absolute; z-index:-1; left:503px; top:225px; height:50px; width:50px;">
 
-
-<input type=button value="Go right"  onClick="{
- if ( myHitOther('myImage01','myImage02') ){
-       document.getElementById('myImage01').style.left = '10px'
-       //alert('I win')
-
-   }
-   document.getElementById('myImage01').style.left = 
-      parseInt(document.getElementById('myImage01').style.left) + 10 + 'px'
-    
-   //document.getElementById('myImage01').style.top = parseInt(document.getElementById('myImage01').style.top) + 10 + 'px'
-}">
-
-<input type=button value="Go left"  onClick="{
- if ( myHitOther('myImage01','myImage02') ){
-       document.getElementById('myImage01').style.left = '10px'
-       //alert('I win')
-
-   }
-   document.getElementById('myImage01').style.left = 
-      parseInt(document.getElementById('myImage01').style.left) - 10 + 'px'
-    
-   //document.getElementById('myImage01').style.top = parseInt(document.getElementById('myImage01').style.top) + 10 + 'px'
+<table border=3 align=center>
 
 
-}">
-<input type=button value="Go up"  onClick="{
+
+
+<tr><td><input type=button value=" up right  " onclick="{
+ document.getElementById('thing').style.top=
+ parseInt(document.getElementById('thing').style.top) - 10 + 'px'
+ document.getElementById('thing').style.left=
+ parseInt(document.getElementById('thing').style.left) + 10 + 'px'
+}"></td>
+<td><input type=button value="   Go up   "  onClick="{
  if ( myHitOther('myImage01','myImage02') ){
        document.getElementById('myImage01').style.top = '10px'
        //alert('I win')
@@ -59,9 +44,48 @@ style="position:absolute; z-index:-1; left:503px; top:225px; height:50px; width:
    //document.getElementById('myImage01').style.top = parseInt(document.getElementById('myImage01').style.top) + 10 + 'px'
 
 
-}">
+}"></td><td><input type=button value="   up right    " onclick="{
+ document.getElementById('thing').style.top=
+ parseInt(document.getElementById('thing').style.top) - 10 + 'px'
+ document.getElementById('thing').style.left=
+ parseInt(document.getElementById('thing').style.left) + 10 + 'px'
+}"></td></tr>
 
-<input type=button value="Go down"  onClick="{
+<tr><td><input type=button value="  Go left  "  onClick="{
+ if ( myHitOther('myImage01','myImage02') ){
+       document.getElementById('myImage01').style.left = '10px'
+       //alert('I win')
+
+   }
+   document.getElementById('myImage01').style.left = 
+      parseInt(document.getElementById('myImage01').style.left) - 10 + 'px'
+    
+   //document.getElementById('myImage01').style.top = parseInt(document.getElementById('myImage01').style.top) + 10 + 'px'
+
+
+}"></td><td><input type=button value="    stop    " onclick="alert('you have crimes against skyrim and her people what say you in your defence')"></td>
+
+
+<td><input type=button value="  Go right    "  onClick="{
+ if ( myHitOther('myImage01','myImage02') ){
+       document.getElementById('myImage01').style.left = '10px'
+       //alert('I win')
+
+   }
+   document.getElementById('myImage01').style.left = 
+      parseInt(document.getElementById('myImage01').style.left) + 10 + 'px'
+    
+   //document.getElementById('myImage01').style.top = parseInt(document.getElementById('myImage01').style.top) + 10 + 'px'
+
+
+}"></td></tr>
+<tr><td><input type=button value="down left" onclick="{
+ document.getElementById('thing').style.top=
+ parseInt(document.getElementById('thing').style.top) + 10 + 'px'
+ document.getElementById('thing').style.left=
+ parseInt(document.getElementById('thing').style.left) - 10 + 'px'
+}">
+</td><td><input type=button value="Go down"  onClick="{
  if ( myHitOther('myImage01','myImage02') ){
        document.getElementById('myImage01').style.top = '10px'
        //alert('I win')
@@ -73,7 +97,14 @@ style="position:absolute; z-index:-1; left:503px; top:225px; height:50px; width:
    //document.getElementById('myImage01').style.top = parseInt(document.getElementById('myImage01').style.top) + 10 + 'px'
 
 
-}">
+}"></td><td><input type=button value=" down right  " onclick="{
+ document.getElementById('thing').style.top=
+ parseInt(document.getElementById('thing').style.top) + 10 + 'px'
+ document.getElementById('thing').style.left=
+ parseInt(document.getElementById('thing').style.left) + 10 + 'px'
+}"></td></tr>
+
+</table>
 
 <body onkeydown="{
 if ( myHitOther('myImage01','myImage02') ){
@@ -103,24 +134,24 @@ if (event.key == 'w') {
    } 
 
 if (event.key == 'ArrowRight') {
-      document.getElementById('myImage01').style.left =
-      parseInt(document.getElementById('myImage01').style.left) + 10 + 'px'
+      document.getElementById('myImage02').style.left =
+      parseInt(document.getElementById('myImage02').style.left) + 10 + 'px'
    } 
 
 if (event.key == 'ArrowDown') {
-      document.getElementById('myImage01').style.top =
-      parseInt(document.getElementById('myImage01').style.top) + 10 + 'px'
+      document.getElementById('myImage02').style.top =
+      parseInt(document.getElementById('myImage02').style.top) + 10 + 'px'
    } 
 
 if (event.key == 'ArrowLeft') {
-      document.getElementById('myImage01').style.left =
-      parseInt(document.getElementById('myImage01').style.left) - 10 + 'px'
+      document.getElementById('myImage02').style.left =
+      parseInt(document.getElementById('myImage02').style.left) - 10 + 'px'
    } 
 
 
 if (event.key == 'ArrowUp') {
-      document.getElementById('myImage01').style.top =
-      parseInt(document.getElementById('myImage01').style.top) - 10 + 'px'
+      document.getElementById('myImage02').style.top =
+      parseInt(document.getElementById('myImage02').style.top) - 10 + 'px'
    } 
 }">
 <script>
