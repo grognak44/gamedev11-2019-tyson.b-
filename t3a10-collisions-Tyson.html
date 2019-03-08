@@ -19,7 +19,7 @@ style="position:absolute; z-index:-1; left:0px; top:0px; height:50px; width:50px
 
 
 <img src="danny.jfif"  id="myImage02" 
-style="position:absolute; z-index:-1; left:100px; top:0px; height:50px; width:50px;">
+style="position:absolute; z-index:-1; left:503px; top:225px; height:50px; width:50px;">
 
 
 <input type=button value="Go right"  onClick="{
@@ -35,12 +35,93 @@ style="position:absolute; z-index:-1; left:100px; top:0px; height:50px; width:50
 }">
 
 <input type=button value="Go left"  onClick="{
+ if ( myHitOther('myImage01','myImage02') ){
+       document.getElementById('myImage01').style.left = '10px'
+       //alert('I win')
+
+   }
    document.getElementById('myImage01').style.left = 
       parseInt(document.getElementById('myImage01').style.left) - 10 + 'px'
     
    //document.getElementById('myImage01').style.top = parseInt(document.getElementById('myImage01').style.top) + 10 + 'px'
 
 
+}">
+<input type=button value="Go up"  onClick="{
+ if ( myHitOther('myImage01','myImage02') ){
+       document.getElementById('myImage01').style.top = '10px'
+       //alert('I win')
+
+   }
+   document.getElementById('myImage01').style.top = 
+      parseInt(document.getElementById('myImage01').style.top) - 10 + 'px'
+    
+   //document.getElementById('myImage01').style.top = parseInt(document.getElementById('myImage01').style.top) + 10 + 'px'
+
+
+}">
+
+<input type=button value="Go down"  onClick="{
+ if ( myHitOther('myImage01','myImage02') ){
+       document.getElementById('myImage01').style.top = '10px'
+       //alert('I win')
+
+   }
+   document.getElementById('myImage01').style.top = 
+      parseInt(document.getElementById('myImage01').style.top) + 10 + 'px'
+    
+   //document.getElementById('myImage01').style.top = parseInt(document.getElementById('myImage01').style.top) + 10 + 'px'
+
+
+}">
+
+<body onkeydown="{
+if ( myHitOther('myImage01','myImage02') ){
+       document.getElementById('myImage01').style.top = '10px'
+       //alert('I win')
+}
+
+   if (event.key == 'd') {
+      document.getElementById('myImage01').style.left =
+      parseInt(document.getElementById('myImage01').style.left) + 10 + 'px'
+
+   } 
+
+if (event.key == 's') {
+      document.getElementById('myImage01').style.top =
+      parseInt(document.getElementById('myImage01').style.top) + 10 + 'px'
+   } 
+
+if (event.key == 'a') {
+      document.getElementById('myImage01').style.left =
+      parseInt(document.getElementById('myImage01').style.left) - 10 + 'px'
+   } 
+
+if (event.key == 'w') {
+      document.getElementById('myImage01').style.top =
+      parseInt(document.getElementById('myImage01').style.top) - 10 + 'px'
+   } 
+
+if (event.key == 'ArrowRight') {
+      document.getElementById('myImage01').style.left =
+      parseInt(document.getElementById('myImage01').style.left) + 10 + 'px'
+   } 
+
+if (event.key == 'ArrowDown') {
+      document.getElementById('myImage01').style.top =
+      parseInt(document.getElementById('myImage01').style.top) + 10 + 'px'
+   } 
+
+if (event.key == 'ArrowLeft') {
+      document.getElementById('myImage01').style.left =
+      parseInt(document.getElementById('myImage01').style.left) - 10 + 'px'
+   } 
+
+
+if (event.key == 'ArrowUp') {
+      document.getElementById('myImage01').style.top =
+      parseInt(document.getElementById('myImage01').style.top) - 10 + 'px'
+   } 
 }">
 <script>
 function myHitOther(myImage01,myImage02){
