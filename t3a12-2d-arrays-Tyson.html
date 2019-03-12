@@ -1,22 +1,36 @@
 <h1 align=center> 2D Arrays By Tyson </h1>
-
+<body background="blue.jfif"
 <input type=button value="generate 2D Array" onclick="{
 
   document.getElementById('myDiv01').innerHTML = ''
   let myChart = new Array()
 
-  myChart[0] = new Array()  
+  myChart[0] = new Array() 
   myChart[1] = new Array()
+  myChart[2] = new Array()
+  myChart[3] = new Array()
 
-  myChart[0][0] = 3       
-  myChart[1][1] = 12
-
-  document.getElementById('myDiv01').innerHTML +=
+  myChart[0][0] = 3
+  myChart[0][1] = 6
+  myChart[0][2] = 9 
+  myChart[1][0] = 12  
+  myChart[1][1] = 15
+  myChart[1][2] = 18
+  myChart[2][0] = 21
+  myChart[2][1] = 24
+  myChart[2][2] = 27
+  myChart[3][0] = 30
+  myChart[3][1] = 33
+  myChart[3][2] = 36
+  document.getElementById('myDiv01').innerHTML +=`
      <table border=3>
-     <tr><td>   ${myChart[0][0]} </td><td> ${myChart[0][1]} </td></tr>
-     <tr><td>   ${myChart[1][0]} </td><td> ${myChart[1][1]} </td></tr>
-     </table>
+     <tr><td> ${myChart[0][0]} </td><td> ${myChart[0][1]} </td><td> ${myChart[0][2]}</td></tr>
+     <tr><td> ${myChart[1][0]} </td><td> ${myChart[1][1]} </td><td> ${myChart[1][2]}</td></tr>
+     <tr><td> ${myChart[2][0]} </td><td> ${myChart[2][1]} </td><td> ${myChart[2][2]}</td></tr>
+     <tr><td> ${myChart[3][0]} </td><td> ${myChart[3][1]} </td><td> ${myChart[3][2]}</td></tr>
+     </table>`
 
 }"><br><br>
 
 <div id="myDiv01" >...</div>
+</body>
