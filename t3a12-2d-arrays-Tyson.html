@@ -1,0 +1,22 @@
+<h1 align=center> 2D Arrays By Tyson </h1>
+
+<input type=button value="generate 2D Array" onclick="{
+
+  document.getElementById('myDiv01').innerHTML = ''
+  let myChart = new Array()
+
+  myChart[0] = new Array()  
+  myChart[1] = new Array()
+
+  myChart[0][0] = 3       
+  myChart[1][1] = 12
+
+  document.getElementById('myDiv01').innerHTML +=
+     <table border=3>
+     <tr><td>   ${myChart[0][0]} </td><td> ${myChart[0][1]} </td></tr>
+     <tr><td>   ${myChart[1][0]} </td><td> ${myChart[1][1]} </td></tr>
+     </table>
+
+}"><br><br>
+
+<div id="myDiv01" >...</div>
