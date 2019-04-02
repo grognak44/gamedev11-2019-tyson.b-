@@ -20,9 +20,9 @@ document.all.myArea01.value = document.all.myText01>value
 }">
 
 <input type=button value="loops" onclick="{
-  document.all.myArea01.value = 'hey'
-  for ( x = 0; x<= 3; x++){
-     document.all.myarea01.value += x + ','
+  document.all.myArea01.value = ''
+  for ( x = 0; x<= 1000; x++){
+     document.all.myArea01.value += x + ','
    }
 }">
 
@@ -61,6 +61,6 @@ events site</a>
    age: 25,
    eyeColor: 'red'
 }
-   document.all.myArea01.value = 'personfirstName is' +
-      person.firstName + ' person age is'
+   document.all.myArea01.value = 'firstNam' +
+      person.firstName + ' person age is' + person.age
 }"> 
