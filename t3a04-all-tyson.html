@@ -21,14 +21,14 @@ document.all.myArea01.value = document.all.myText01>value
 
 <input type=button value="loops" onclick="{
   document.all.myArea01.value = 'hey'
-  for ( x = 1; x<= 3; x++){
+  for ( x = 0; x<= 3; x++){
      document.all.myarea01.value += x + ','
    }
 }">
 
 
 <input type=button value="decisions" onclick="{
-  x = 9
+  x = document.all.myText01.value
   if (x==9){
      document.all.myArea01.value = 'Wow a nine'
   } else {
