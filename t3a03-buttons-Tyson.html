@@ -1,0 +1,51 @@
+<h2 align=center> t3a03-buttons-Tyson </h2>
+
+<input type=button value="first click" onclick="{
+     alert('welcome to progarmming')
+}"><br>
+
+<input type=text id="myText01" value="Fred"><br>
+<textarea id="myArea01" rows=4 cols=70></textarea><br>
+
+<input type=button value="Input/Output" onclick="{
+   document.all.myArea01.value = document.all.myText01.value
+}">
+
+<input type=button value="variables"  onclick="{
+   myX = 3
+   myWord = 'dog'
+ // myArray[3] = 'super'
+   document.all.myArea01.value = '3 x 3 = ' + myX * myX
+}">
+
+<input type=text id="myText02" value=5>
+<input type=button value="variables 2" onclick="{
+   myX = document.all.myText02.value
+   document.all.myArea01.value = myX + '3 x 3= ' + myX * myX
+}">
+
+<input type=button value= "Loop" onclick="{
+   for  (myLoop = 1;   myLoop <=3; myLoop++){
+       alert ('loop '+myLoop)
+  }
+}">
+
+<input type = button value="Decision" onclick="{
+   myX = 3
+   if (myX == 3){
+        document.all.value = 'yes myX does equal 3. it is' +myX
+   } else {
+        document.all.myArea01.value = 'no myX was ' + myX
+  }">
+
+<script>
+
+function myFun(myPass){
+    document.all.myArea01.value = myPass + ' a function called myfun()'
+}
+</script>
+
+<input type=button value="Functions" onclick="{
+    myPass = 'really not fun'
+    myFun(myPass)
+}">
