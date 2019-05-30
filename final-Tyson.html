@@ -1,42 +1,88 @@
 <head>
 <link rel="shortcut icon" href="danny.ico" type="image/x-icon"> 
 </head>
-<body background=" red">
-<img src="gorgnak.png"  id="myImage01" 
-style="position:absolute; z-index:-1; left:0px; top:0px; height:100px; width:100px;">
+<img src="gorgnak.png"  id="gorgnak" 
+style="position:absolute; z-index:1; left:0px; top:0px; height:100px; width:100px;">
 
 
-<img src="danny.jfif"  id="myImage02" 
+<img src="danny.jfif"  id="danny" 
 style="position:absolute; z-index:-1; left:1500px; top:50px; height:50px; width:50px;">
 
+<img src="cage.png" id="cage"
+style="position:absolute; z-index:1;  height: 100px; width: 120px; left: 1470px; top:30px;">
 
+<img src="key.png" id="random thing"
+style="position:absolute; z-index:-1; left: 2000px; top: 1000px; height:200px; width:200px;">
+
+<img src="key.png" id="fake key01"
+style="position:absolute; height:50px; width: 50px; top:500px; left: 1000px;">
+
+<img src="key.png" id="fake key02"
+style="position:absolute; height:25px; width: 25px; top:300px; left: 700px;">
+
+<img src="key.png" id="fake key03"
+style="position:absolute; height:80px; width: 80px; top:100px; left: 300px;">
+
+<img src="key.png" id="fake key04"
+style="position:absolute; height:40px; width: 40px; top:200px; left: 250px;">
 
 <body onkeydown="{
-if ( myHitOther('myImage01','myImage02') ){
-document.getElementById('myImage01')
+if ( myHitOther('gorgnak','danny', ) ){
+document.getElementById('gorgnak')
 location='https://static.giantbomb.com/uploads/square_medium/0/4404/492530-danny_devito2.jpg'
        
 }
+if ( myHitOther('gorgnak','cage', ) ){
+document.getElementById('gorgnak').style.left='0px'
+
+}
+if ( myHitOther('gorgnak','random thing', ) ){
+document.getElementById('cage').style.left='-200px'
+}
+
+if ( myHitOther('gorgnak','random thing', ) ){
+document.getElementById('random thing').style.left='-500px'       
+}
+
+if ( myHitOther('gorgnak','fake key01', ) ){
+document.getElementById('gorgnak').style.left='0px'
+
+}
+if ( myHitOther('gorgnak','fake key02', ) ){
+document.getElementById('gorgnak').style.left='0px'
+
+}
+
+if ( myHitOther('gorgnak','fake key03', ) ){
+document.getElementById('gorgnak').style.left='0px'
+
+}
+
+if ( myHitOther('gorgnak','fake key04', ) ){
+document.getElementById('gorgnak').style.left='0px'
+
+}
+
 
    if (event.key == 'd') {
-      document.getElementById('myImage01').style.left =
-      parseInt(document.getElementById('myImage01').style.left) + 10 + 'px'
+      document.getElementById('gorgnak').style.left =
+      parseInt(document.getElementById('gorgnak').style.left) + 10 + 'px'
 
    } 
 
 if (event.key == 's') {
-      document.getElementById('myImage01').style.top =
-      parseInt(document.getElementById('myImage01').style.top) + 10 + 'px'
+      document.getElementById('gorgnak').style.top =
+      parseInt(document.getElementById('gorgnak').style.top) + 10 + 'px'
    } 
 
 if (event.key == 'a') {
-      document.getElementById('myImage01').style.left =
-      parseInt(document.getElementById('myImage01').style.left) - 10 + 'px'
+      document.getElementById('gorgnak').style.left =
+      parseInt(document.getElementById('gorgnak').style.left) - 10 + 'px'
    } 
 
 if (event.key == 'w') {
-      document.getElementById('myImage01').style.top =
-      parseInt(document.getElementById('myImage01').style.top) - 10 + 'px'
+      document.getElementById('gorgnak').style.top =
+      parseInt(document.getElementById('gorgnak').style.top) - 10 + 'px'
    } 
 
 
